@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //初始化单击监听事件
     protected void initViewClick(){
         findViewById(R.id.AnLi_1).setOnClickListener(this);
+        findViewById(R.id.AnLi_2).setOnClickListener(this);
     }
 
     @Override
@@ -25,6 +26,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.AnLi_1:
                 startActivity(new Intent(this,DrawerActivity.class));
+                break;
+            case R.id.AnLi_2:
+                startActivity(new Intent(this,qqMenuActivity.class));
                 break;
         }
     }
