@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  自定义对话框样式  -->
+    <style name="myStyleDialog" parent="android:Animation">
+        <!--   进入时动画     -->
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <!--   进入时动画     -->
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+</resources>

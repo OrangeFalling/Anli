@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--  custom setting -->
+    <color name="dialog_push_out_confirm">#D2AA8C</color>
+    <color name="dialog_push_out_cancel">#F16D27</color>
 </resources>

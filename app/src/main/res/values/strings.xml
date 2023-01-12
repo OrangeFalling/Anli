@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Anli</string>
+    <string name="dialog_push_out_text_title1">提示</string>
+    <string name="dialog_push_out_text_title2">你确定要退出App吗？</string>
+    <string name="dialog_push_out_text_title3">确定</string>
+    <string name="dialog_push_out_text_title4">取消</string>
 </resources>
