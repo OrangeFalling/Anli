@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import view.MyDialog;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.AnLi_2).setOnClickListener(this);
         findViewById(R.id.AnLi_3).setOnClickListener(this);
         findViewById(R.id.AnLi_4).setOnClickListener(this);
+        findViewById(R.id.AnLi_5).setOnClickListener(this);
     }
 
     @Override
@@ -38,6 +41,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.AnLi_4:
                 startActivity(new Intent(this,NotificationActivity.class));
                 break;
+            case R.id.AnLi_5:
+                OnExitAccount();
+                break;
         }
+    }
+
+    /**
+     * 设置退出账号按钮弹出对话框
+     */
+    private void OnExitAccount(){
+        final MyDialog myDialog = new MyDialog(this);
+        myDialog.setOnExitListener(view -> {
+            if (myDialog.isShowing()){
+                myDialog.dismiss();
+                finish();
+            }
+        });
+        myDialog.setOnCancelListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (myDialog!=null && myDialog.isShowing()){
+                    myDialog.dismiss();
+                }
+            }
+        });
+        myDialog.show();
     }
 }
