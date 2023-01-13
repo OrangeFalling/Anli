@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.AnLi_3).setOnClickListener(this);
         findViewById(R.id.AnLi_4).setOnClickListener(this);
         findViewById(R.id.AnLi_5).setOnClickListener(this);
+        findViewById(R.id.AnLi_6).setOnClickListener(this);
     }
 
     @Override
@@ -43,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.AnLi_5:
                 OnExitAccount();
+                break;
+            case R.id.AnLi_6:
+                startActivity(new Intent(this,SlideDelteActivity.class));
                 break;
         }
     }
