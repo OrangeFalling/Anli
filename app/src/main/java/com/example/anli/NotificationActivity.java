@@ -7,6 +7,7 @@ import androidx.core.app.NotificationCompat;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -70,12 +71,15 @@ public class NotificationActivity extends AppCompatActivity {
                 Toast.makeText(this,"请手动将通知打开",Toast.LENGTH_SHORT).show();
             }
         }
+        Intent intent = new Intent(this,MainActivity.class);
+        PendingIntent p1 = PendingIntent.getActivity(this,0,intent,0);
         Notification notification = new NotificationCompat.Builder(this,"chat")
                 .setSmallIcon(R.drawable.ic_launcher_foreground)
                 .setAutoCancel(true)
                 .setWhen(System.currentTimeMillis())
                 .setContentTitle("收到一条新消息")
                 .setContentText("哈哈哈，今天我很开心。")
+                .setContentIntent(p1)            //设置通知栏单击跳转
                 .build();
         manager.notify(1,notification);
     }
