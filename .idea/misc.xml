@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/demo_code/anli/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/demo_code/anli/app/src/main/res/layout/activity_drawer.xml" value="0.19947916666666668" />
         <entry key="..\:/demo_code/anli/app/src/main/res/layout/activity_main.xml" value="0.21851851851851853" />
+        <entry key="..\:/demo_code/anli/app/src/main/res/layout/activity_notification.xml" value="0.1" />
         <entry key="..\:/demo_code/anli/app/src/main/res/layout/activity_push_out_dialog.xml" value="0.11277173913043478" />
         <entry key="..\:/demo_code/anli/app/src/main/res/layout/activity_qq_menu.xml" value="0.1" />
         <entry key="..\:/demo_code/anli/app/src/main/res/layout/dialog_push_out_layout.xml" value="0.14666666666666667" />

@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">Anli</string>
+    <!--  退出对话框  -->
     <string name="dialog_push_out_text_title1">提示</string>
     <string name="dialog_push_out_text_title2">你确定要退出App吗？</string>
     <string name="dialog_push_out_text_title3">确定</string>
     <string name="dialog_push_out_text_title4">取消</string>
+
+    <!--  通知消息  -->
+    <string name="notification_text_btn1">发送聊天消息</string>
+    <string name="notification_text_btn2">发送订阅消息</string>
+    <string name="notification_text_btn3">删除聊天消息渠道</string>
+    <string name="notification_text_btn4">删除订阅消息渠道</string>
 </resources>
