@@ -59,5 +59,14 @@
         android:layout_width="match_parent"
         android:layout_height="66dp"
         android:gravity="center"/>
+    <TextView
+        android:id="@+id/AnLi_7"
+        android:text="自定义流式布局案例"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        android:background="@color/purple_200"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="center"/>
 
 </LinearLayout>
