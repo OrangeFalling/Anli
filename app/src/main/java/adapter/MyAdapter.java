@@ -76,7 +76,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //获取列表中每行的布局文件
-        View view  = LayoutInflater.from(lContext).inflate(R.layout.rv_item_layout,parent,false);
+        View view  = LayoutInflater.from(lContext).inflate(R.layout.item_rv_layout,parent,false);
         MyViewHolder holder = new MyViewHolder(view);
         return holder;
     }
