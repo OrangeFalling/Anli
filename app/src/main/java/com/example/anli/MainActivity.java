@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.AnLi_8).setOnClickListener(this);
         findViewById(R.id.AnLi_9).setOnClickListener(this);
         findViewById(R.id.AnLi_10).setOnClickListener(this);
+        findViewById(R.id.AnLi_11).setOnClickListener(this);
     }
 
     @Override
@@ -63,6 +64,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.AnLi_10:
                 startActivity(new Intent(this,FriendCircleActivity.class));
+                break;
+            case R.id.AnLi_11:
+                startActivity(new Intent(this,PaiChartActivity.class));
                 break;
         }
     }
