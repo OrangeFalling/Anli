@@ -109,6 +109,15 @@
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:gravity="center"/>
+        <TextView
+            android:id="@+id/AnLi_12"
+            android:text="语音打电话"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:background="@color/purple_200"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:gravity="center"/>
 
     </LinearLayout>
 

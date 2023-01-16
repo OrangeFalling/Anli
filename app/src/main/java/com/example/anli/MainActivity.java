@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.AnLi_9).setOnClickListener(this);
         findViewById(R.id.AnLi_10).setOnClickListener(this);
         findViewById(R.id.AnLi_11).setOnClickListener(this);
+        findViewById(R.id.AnLi_12).setOnClickListener(this);
     }
 
     @Override
@@ -67,6 +68,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.AnLi_11:
                 startActivity(new Intent(this,PaiChartActivity.class));
+                break;
+            case R.id.AnLi_12:
+                startActivity(new Intent(this,VoicePhoneActivity.class));
                 break;
         }
     }

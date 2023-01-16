@@ -3,6 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.anli">
 
+    <!--  录音  -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!--  联网  -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--  获取网络状态  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--  获取WiFi状态  -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--  改变网络状态  -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <!--  读取电话状态  -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!--  获取精确的位置信息  -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--  读取联系人信息  -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!--  允许写外部储存器  -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--  允许写设置  -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!--  允许读外部储存器  -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +36,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Anli"
         tools:targetApi="31">
+        <activity
+            android:name=".VoicePhoneActivity"
+            android:exported="false" />
         <activity
             android:name=".PaiChartActivity"
             android:exported="false" />
